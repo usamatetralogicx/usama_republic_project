@@ -1,0 +1,111 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/* TOASTR BUGFIX */
+#toast-container > div {
+    opacity: 1;
+}
+.toast {
+    font-size: initial !important;
+    border: initial !important;
+    backdrop-filter: blur(0) !important;
+}
+.toast-success {
+    background-color: #28c76f !important;
+}
+.toast-error {
+    background-color: #ea5455 !important;
+}
+.toast-info {
+    background-color: #00cfe8 !important;
+}
+.toast-warning {
+    background-color: #ff9f43 !important;
+}
+
+.bootstrap-tagsinput {
+    width: 100% !important;
+}
+.bootstrap-tagsinput:focus {
+    color: #4e5154;
+    background-color: #fff;
+    border-color: #7367f0;
+    outline: 0;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+ .dt-checkboxes:after{
+    background-color: #7367f0 !important;
+    font-family: "feather" !important;
+    content: "\e83f" !important;
+    font-size: 0.75rem !important;
+    color: #fff !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -7px !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    overflow: hidden !important;
+    transform: rotate(270deg) translate(100%) !important;
+    transform-origin: right !important;
+    transition: all 0.2s ease !important;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ .dt-checkboxes:before{
+    border: 2px solid #b4b4b4 !important;
+    position: absolute !important;
+    left: -8px !important;
+    content: "" !important;
+    width: 1rem !important;
+    height: 1rem !important;
+    padding: 0 !important;
+    border-radius: 1px !important;
+    transform: rotate(0deg) !important;
+    overflow: hidden !important;
+    transition: all 0.2s ease !important;
+
+}
+.selected .dt-checkboxes:after {
+    transform: rotate(0deg) !important;
+    border: 0px solid #7367f0 !important;
+    transition: all 0.2s ease !important;
+    opacity: 1 !important;
+}
+.selected .dt-checkboxes:before {
+opacity: 0;
+}
+
+.fulfillment-quantity:focus {
+    color: #4e5154 !important;
+    background-color: #fff !important;
+    border-color: #7367f0 !important;
+    outline: 0 !important;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.fulfillment-quantity {
+    /*display: block !important;*/
+    /*width: 100% !important;*/
+    height: calc( 1.25em + 1.4rem + 1px) !important;
+    padding: 0.7rem 0.7rem !important;
+    font-size: 0.96rem !important;
+    font-weight: 400 !important;
+    line-height: 1.25 !important;
+    color: #4e5154 !important;
+    background-color: #fff !important;
+    background-clip: padding-box !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 5px !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
